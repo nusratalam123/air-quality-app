@@ -1,3 +1,5 @@
+![airQuality](https://github.com/user-attachments/assets/7b15759b-0680-479b-8cd6-8d3ce2b535c7)
+![aeroawar2](https://github.com/user-attachments/assets/2653173c-6c69-417a-8382-798cb18210ff)
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
