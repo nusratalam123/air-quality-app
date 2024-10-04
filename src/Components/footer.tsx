@@ -2,21 +2,37 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-100 text-center py-4 w-full">
+    <footer
+      style={{
+        margin: "0px",
+        border: "1px solid bloack",
+        background: "#4CAF50",
+        color: "white",
+        fontSize: "20px",
+      }}
+    >
       <div className="container mx-auto">
-        <p className="text-sm text-gray-600">
+        <p
+          style={{
+            marginLeft: "35%",
+          }}
+        >
           © {new Date().getFullYear()} Air Quality Monitoring. All rights
           reserved.
         </p>
-        <p className="text-sm">
+        <p
+          style={{
+            marginLeft: "35%",
+          }}
+        >
           Powered by{" "}
           <a
-            href="https://nextjs.org/"
+            href="https://Error-404.org/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:underline"
           >
-            Next.js
+            Error-404.org
           </a>
         </p>
       </div>
