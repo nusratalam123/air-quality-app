@@ -1,3 +1,4 @@
+import Footer from "@/Components/footer";
 import Dashboard from "@/Pages/Dashbroad";
 import React from "react";
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <>
       <h1>Hello</h1>
       <Dashboard></Dashboard>
+      <Footer></Footer>
     </>
   );
 }
