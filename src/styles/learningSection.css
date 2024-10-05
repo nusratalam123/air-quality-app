@@ -1,0 +1,26 @@
+/* styles/aqiTable.css */
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-left:10% ;
+}
+
+.table-title{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 30%;
+}
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,30 @@
+/* styles/AirQualityReport.module.css */
+.container {
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.good {
+  border: 2px solid green;
+}
+
+.moderate {
+  border: 2px solid yellow;
+}
+
+.unhealthyForSensitive {
+  border: 2px solid orange;
+}
+
+.unhealthy {
+  border: 2px solid red;
+}
+
+.veryUnhealthy {
+  border: 2px solid purple;
+}
+
+.hazardous {
+  border: 2px solid maroon;
+}
