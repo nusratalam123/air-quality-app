@@ -3,6 +3,8 @@ import { useState } from "react";
 import fetchAirQualityDataByArea from "../Components/fatchdata";
 import AirQualityPieChart from "@/Components/airQualityPieChart";
 import "../styles/card.css";
+import Learnsection from "./learningSection";
+import { getAirQualityMessage } from "@/utils/getApiMsg";
 
 
 
@@ -91,6 +93,30 @@ const Dashboard = () => {
       ) : (
         <p>No data available for this area</p>
       )}
+      <div className="dashboard-container">
+         {/* Displaying Air Quality Messages */}
+          <div className="message-section">
+            <h2 className="index-text">Health Recommendation</h2>
+            {airQualityData && (
+              <div className="air-quality-messages">
+                {/* Get message based on the air quality */}
+                {(() => {
+                  const { aqiMessage, pm25Message, co2Message, temperatureMessage } =
+                    getAirQualityMessage(airQualityData);
+                  return (
+                    <div>
+                      <p className="text-lg font-semibold">{aqiMessage}</p>
+                      <p>{pm25Message}</p>
+                      <p>{co2Message}</p>
+                      <p>{temperatureMessage}</p>
+                    </div>
+                  );
+                })()}
+              </div>
+            )}
+          </div>
+        <Learnsection></Learnsection>
+      </div>
     </div>
   );
 };

@@ -122,3 +122,57 @@ body {
     font-weight: bold;
     font-size: large;
 }
+
+
+.dashboard-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+  margin-top: 20px;
+}
+
+.message-section {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 50%;
+  margin-left: 10%;
+}
+
+.index-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.air-quality-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.air-quality-messages p {
+  font-size: 1.125rem; /* Slightly bigger than base text */
+  color: #555;
+}
+
+.air-quality-messages .font-semibold {
+  font-weight: 600;
+  color: #2a9d8f;
+}
+
+.air-quality-messages div {
+  
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.air-quality-messages div:hover {
+  transform: translateY(-5px); /* Adds a subtle hover effect */
+}
+
